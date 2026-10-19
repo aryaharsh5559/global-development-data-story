@@ -65,4 +65,4 @@ D3.js v7, Mapbox GL JS v3, Scrollama, vanilla JavaScript, HTML and CSS.
 
 ## Team and my role
 
-Built for DSC 209R (Data Visualization) at UC San Diego, Fall 2025, by Camila Paik, Gabrielle Despaigne, Harsh Arya and Raghav Vasappanavara. My work included replacing hand-entered sample data with the full World Bank dataset and loader, writing the health-vs-wealth narrative, the scrollytelling timeline and the West-vs-Rest summary, and refining the choropleth color scales, bar-race controls and radar axes.
+Built in 2025 by Camila Paik, Gabrielle Despaigne, Harsh Arya and Raghav Vasappanavara. My work included replacing hand-entered sample data with the full World Bank dataset and loader, writing the health-vs-wealth narrative, the scrollytelling timeline and the West-vs-Rest summary, and refining the choropleth color scales, bar-race controls and radar axes.
