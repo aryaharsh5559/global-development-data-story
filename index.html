@@ -23,7 +23,7 @@
         <li><a href="#overview">Overview</a></li>
         <li><a href="#timeline">Timeline</a></li>
         <li><a href="#visualizations">Visualizations</a></li>
-        <li><a href="#writeup">Progress</a></li>
+        <li><a href="#writeup">Takeaway</a></li>
       </ul>
       <button id="theme-toggle" aria-label="Toggle theme">
         <span class="icon">☀️</span>
@@ -207,7 +207,7 @@
     <div class="viz-container featured">
       <div class="viz-header">
         <h3>🌍 Global Development Patterns</h3>
-        <p>Compare how unequal the world looks in income vs life expectancy over 60 years&mdash;try switching the indicator in 2020 to see how health has caught up even where wealth has not.</p>
+        <p>Compare how unequal the world looks in income vs life expectancy over 60 years&mdash;try switching the indicator in 2019 to see how health has caught up even where wealth has not.</p>
       </div>
       <div class="viz-controls">
         <div class="control-group">
@@ -242,7 +242,7 @@
         <div class="control-group">
           <label>Metric:</label>
           <select id="race-metric">
-            <option value="gdp">Total GDP</option>
+            <option value="gdp">Total GDP (constant 2010 US$)</option>
             <option value="population">Population</option>
             <option value="life_expectancy">Life Expectancy</option>
           </select>
@@ -300,10 +300,6 @@
         <p>Compare countries across multiple development dimensions and see how gaps in life expectancy are often smaller than gaps in income.</p>
       </div>
       <div class="viz-controls">
-        <div class="control-group country-selector">
-          <label>Select Countries:</label>
-          <div class="country-chips" id="country-chips"></div>
-        </div>
         <div class="control-group">
           <label>Year: <span id="radar-year-display">2020</span></label>
           <input type="range" id="radar-year-slider" min="1960" max="2020" value="2020" step="5">
@@ -356,31 +352,9 @@
 
   <!-- Project Writeup -->
   <section id="writeup" class="writeup-section">
-    <h2>Project Progress & Challenges</h2>
+    <h2>The Takeaway</h2>
     
     <div class="writeup-content">
-      <div class="writeup-block">
-        <h3>What was the most challenging part of the project to design and why?</h3>
-        <p>
-          The most challenging aspect was creating meaningful narrative connections between disparate 
-          indicators while managing the complexity of 60 years of data across 250+ countries and 20 indicators. 
-          Unlike simple time-series visualizations, our project required coordinating multiple linked views 
-          where user interactions in one visualization (such as selecting a country or time period) intelligently 
-          update other visualizations while maintaining visual continuity and performance.
-        </p>
-        <p>
-          Another significant challenge was designing an information hierarchy that serves both exploratory 
-          and explanatory purposes. We needed to balance data-driven exploration (allowing users to discover 
-          patterns themselves) with guided narrative storytelling (highlighting key insights about historical 
-          events and their ripple effects). This required careful attention to visual encoding choices, 
-          interaction design, and progressive disclosure—revealing complexity gradually without overwhelming 
-          users. We implemented sophisticated filtering, aggregation, and animation techniques while 
-          ensuring the visualizations remain accessible, performant, and tell coherent stories about human 
-          development that go beyond just displaying numbers. The integration of geographical, temporal, and 
-          multivariate dimensions added layers of complexity that demanded thoughtful design decisions at every step.
-        </p>
-      </div>
-
       <div class="writeup-block">
         <h3>Key Takeaway: Health Convergence vs Wealth Inequality</h3>
         <p>
@@ -393,12 +367,12 @@
     </div>
     
     <div class="team-members">
-      <h3>Team Members</h3>
+      <h3>Team</h3>
       <ul>
-        <li>Camila Paik - capaik@ucsd.edu</li>
-        <li>Gabrielle Despaigne - gdespaigne@ucsd.edu</li>
-        <li>Harsh Arya - harya@ucsd.edu</li>
-        <li>Raghav Vasappanavara - rvasappanavara@ucsd.edu</li>
+        <li>Camila Paik</li>
+        <li>Gabrielle Despaigne</li>
+        <li>Harsh Arya</li>
+        <li>Raghav Vasappanavara</li>
       </ul>
     </div>
   </section>
@@ -406,7 +380,7 @@
   <!-- Footer -->
   <footer>
     <div class="footer-content">
-      <p>DSC 209R - Data Visualization | Fall 2025</p>
+      <p>Built for DSC 209R (Data Visualization) at UC San Diego, Fall 2025</p>
       <p>
         Data Source: 
         <a href="https://github.com/light-and-salt/World-Bank-Data-by-Indicators" target="_blank">
@@ -414,7 +388,7 @@
         </a>
       </p>
       <p>
-        <a href="https://github.com/rvasappa-ucsd/dsc209_final_project" target="_blank">
+        <a href="https://github.com/aryaharsh5559/global-development-data-story" target="_blank">
           View on GitHub
         </a>
       </p>
@@ -425,7 +399,7 @@
   <script src="https://api.mapbox.com/mapbox-gl-js/v3.0.0/mapbox-gl.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
   <script src="https://unpkg.com/intersection-observer@0.12.0/intersection-observer.js"></script>
-  <script src="https://unpkg.com/scrollama"></script>
+  <script src="https://unpkg.com/scrollama@3.2.0/build/scrollama.js"></script>
   <script src="data-loader.js"></script>
   <script src="main-new.js"></script>
 </body>

@@ -416,7 +416,7 @@ function updateTimelineViz(year) {
     .attr('text-anchor', 'middle')
     .style('fill', '#9aa0a6')
     .style('font-size', '18px')
-    .text('Regional GDP per Capita (USD)');
+    .text('Regional GDP per Capita (constant 2010 US$)');
 
   g.append('text')
     .attr('transform', 'rotate(90)')
@@ -708,7 +708,7 @@ function getRaceMetricConfig(key) {
     case 'gdp':
     default:
       return {
-        label: 'Total GDP',
+        label: 'Total GDP (constant 2010 US$)',
         accessor: d => d.gdpPerCapita * d.population,
         format: v => '$' + (v / 1e12).toFixed(2) + 'T'
       };
@@ -988,7 +988,7 @@ function createBubbleChart() {
     .attr('text-anchor', 'middle')
     .style('fill', '#9aa0a6')
     .style('font-size', '14px')
-    .text('GDP per Capita ($)');
+    .text('GDP per Capita (constant 2010 US$)');
   
   g.append('text')
     .attr('transform', 'rotate(-90)')
@@ -1688,7 +1688,7 @@ function createTrajectoryChart() {
     .attr('y', height + 45)
     .attr('text-anchor', 'middle')
     .style('fill', '#9aa0a6')
-    .text('GDP per Capita ($)');
+    .text('GDP per Capita (constant 2010 US$)');
   
   g.append('text')
     .attr('transform', 'rotate(-90)')
@@ -1814,7 +1814,7 @@ function createIndiaChinaTrajectory() {
     .attr('y', height + 45)
     .attr('text-anchor', 'middle')
     .style('fill', '#9aa0a6')
-    .text('GDP per Capita ($, log scale)');
+    .text('GDP per Capita (constant 2010 US$, log scale)');
 
   g.append('text')
     .attr('transform', 'rotate(-90)')
