@@ -1,6 +1,8 @@
 # Echoes of History: Did the World Grow More Equal in Health or in Wealth?
 
-**Live site:** https://aryaharsh5559.github.io/global-development-data-story/
+[![View the live site](https://img.shields.io/badge/View%20the%20live%20site-%E2%86%92-2ea44f?style=for-the-badge)](https://aryaharsh5559.github.io/global-development-data-story/)
+
+**Live site:** [aryaharsh5559.github.io/global-development-data-story/](https://aryaharsh5559.github.io/global-development-data-story/)
 
 An interactive, scroll-driven data story built on 60 years of World Bank data. It shows that while income gaps between countries stayed wide, life expectancy converged: many low- and middle-income countries gained decades of life without catching up in GDP per capita.
 
